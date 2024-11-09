@@ -10,8 +10,6 @@ jobs:
         uses: actions/checkout@v4
       - name: install npm packages
         run: npm install
-      - name: Set Node options
-        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
       - name: npm run build
         run: npm run build
       - name: test the application
